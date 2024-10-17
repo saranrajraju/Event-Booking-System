@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+.login-container,
+.booking-form,
+.event-card,
+.thank-you {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.login-container input,
+.booking-form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if there are too many events */
+  justify-content: space-around; /* Adds space between event cards */
+  gap: 20px; /* Adds space between the cards */
+  max-width: 1200px; /* Optional: to limit the total width of the list */
+  margin: 0 auto;
+}
+
+.event-card {
+  flex: 1 1 calc(33.33% - 20px); /* Makes cards 3 in a row and resizes dynamically */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.event-card h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.event-card button {
+  margin-top: 10px;
+  width: 100%;
+}
